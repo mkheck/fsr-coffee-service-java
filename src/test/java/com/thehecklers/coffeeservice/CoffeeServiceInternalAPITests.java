@@ -16,7 +16,7 @@ import java.time.Duration;
 
 @RunWith(SpringRunner.class)
 //@WebFluxTest(CoffeeService.class)
-@WebFluxTest({CoffeeService.class, CoffeeHandler.class})
+@WebFluxTest({CoffeeService.class, CoffeeRouter.class})
 public class CoffeeServiceInternalAPITests {
     @Autowired
     private CoffeeService service;

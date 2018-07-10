@@ -17,7 +17,7 @@ import reactor.test.StepVerifier;
 
 @RunWith(SpringRunner.class)
 //@WebFluxTest({CoffeeController.class, CoffeeService.class})
-@WebFluxTest({RouterFunction.class, CoffeeHandler.class, CoffeeService.class})
+@WebFluxTest({CoffeeRouter.class, CoffeeService.class})
 public class CoffeeServiceExternalAPITests {
     @Autowired
     private WebTestClient client;
